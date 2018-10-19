@@ -1,0 +1,46 @@
+{
+  "pinVersions": false,
+	"semanticCommits": true,
+	"semanticPrefix": "chore",
+	"commitMessage": "{{semanticPrefix}} Update {{depName}} to version {{newVersion}}",
+	"separateMajorMinor": false,
+	"labels": [
+		"dependencies"
+  ],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+	"packages": [
+    {
+      "packagePattern": "^@angular\/.*",
+      "groupName": "angular",
+      "pinVersions": false
+    },
+    {
+      "packagePattern": "^@angular-devkit\/.*",
+      "groupName": "angular devkit",
+      "pinVersions": false
+    },
+    {
+      "packagePattern": "^@ngrx\/.*",
+      "groupName": "ngrx",
+      "pinVersions": false
+    },
+    {
+      "packagePattern": "^@types\/.*",
+      "groupName": "type definitions",
+      "pinVersions": false
+    },
+    {
+      "packagePattern": "^jasmine.*",
+      "groupName": "jasmine",
+      "pinVersions": false
+    },
+    {
+      "packagePattern": "^karma.*",
+      "groupName": "karma",
+      "pinVersions": false
+    }
+  ]
+}
